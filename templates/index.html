@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+
+        <h1>
+            Saving Lives, One Paw at a Time
+            <span class="paw">🐾</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Caring for Strays, Rescuing Lives, Creating Families
+        </p>
+
+        <div class="hero-buttons">
+            {% if session.get('user_id') %}
+                <a href="{{ url_for('adoption') }}" class="btn-primary">Adopt Now</a>
+            {% else %}
+                <a href="{{ url_for('join') }}" class="btn-primary">Join Us</a>
+            {% endif %}
+
+            <a href="{{ url_for('services') }}" class="btn-outline">Explore Services</a>
+        </div>
+
+
+    </div>
+</section>
+
+
+{% endblock %}

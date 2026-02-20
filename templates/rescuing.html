@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="service-detail">
+
+    <div class="detail-row">
+        <div class="detail-image">
+            <img src="{{ url_for('static', filename='images/rescue.jpg') }}">
+        </div>
+
+        <div class="detail-text">
+            <h1>Rescue Mission 🚑</h1>
+            <p class="subtitle">
+                Emergency rescue and medical help for injured strays.
+            </p>
+
+            <p>
+                Our team responds quickly to accidents and critical
+                medical situations involving stray animals.
+            </p>
+
+            <ul>
+                <li>✔ 24/7 emergency response</li>
+                <li>✔ Medical treatment & surgery</li>
+                <li>✔ Rehabilitation care</li>
+            </ul>
+
+            <a href="/services" class="btn-primary">Back to Services</a>
+        </div>
+    </div>
+
+    <div class="detail-row reverse">
+        <div class="detail-text">
+            <h2>Every Life Matters</h2>
+            <p>
+                With your help, we can save more lives and
+                provide proper medical facilities to injured animals.
+            </p>
+        </div>
+
+        <div class="detail-image">
+            <img src="{{ url_for('static', filename='images/rescue2.jpg') }}">
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

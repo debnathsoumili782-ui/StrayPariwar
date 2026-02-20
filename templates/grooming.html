@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="service-detail">
+
+    <div class="detail-row">
+        <div class="detail-image">
+            <img src="{{ url_for('static', filename='images/grooming.jpg') }}">
+        </div>
+
+        <div class="detail-text">
+            <h1>Grooming & Care ✂️</h1>
+            <p>
+                Hygiene and grooming services for rescued animals.
+            </p>
+
+            <ul>
+                <li>✔ Bathing & cleaning</li>
+                <li>✔ Fur trimming</li>
+                <li>✔ Health inspection</li>
+            </ul>
+
+            <a href="/services" class="btn-primary">Back to Services</a>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

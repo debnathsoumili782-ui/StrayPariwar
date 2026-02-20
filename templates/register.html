@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="form-section">
+    <div class="form-card">
+        <h2>Create Account ✨</h2>
+
+        <form method="POST">
+            <input type="text" name="username" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account?
+            <a href="{{ url_for('login') }}" style="color:#ff9800;">Login</a>
+        </p>
+    </div>
+</section>
+
+{% endblock %}

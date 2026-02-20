@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="services-section">
+
+    <!-- Feeding -->
+    <div class="service-row">
+        <div class="service-image">
+            <img src="{{ url_for('static', filename='images/feed.jpg') }}">
+        </div>
+        <div class="service-text">
+            <h2>Feeding Program 🍲</h2>
+            <p>Providing nutritious meals for stray animals every day.</p>
+            <a href="/feeding" class="btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Rescue -->
+    <div class="service-row reverse">
+        <div class="service-image">
+            <img src="{{ url_for('static', filename='images/rescue.jpg') }}">
+        </div>
+        <div class="service-text">
+            <h2>Rescue Mission 🚑</h2>
+            <p>Emergency rescue and medical help for injured strays.</p>
+            <a href="/rescuing" class="btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Adoption -->
+    <div class="service-row">
+        <div class="service-image">
+            <img src="{{ url_for('static', filename='images/adopt.jpg') }}">
+        </div>
+        <div class="service-text">
+            <h2>Adoption 🏠</h2>
+            <p>Helping loving families adopt rescued pets.</p>
+            <a href="/adoption" class="btn-primary">Adopt Now</a>
+        </div>
+    </div>
+
+    <!-- Grooming -->
+    <div class="service-row reverse">
+        <div class="service-image">
+            <img src="{{ url_for('static', filename='images/groom.jpg') }}">
+        </div>
+        <div class="service-text">
+            <h2>Grooming & Care ✂️</h2>
+            <p>Professional grooming and hygiene services.</p>
+            <a href="/grooming" class="btn-primary">Learn More</a>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
