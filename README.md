@@ -29,8 +29,8 @@ StrayPariwar is a Flask-based NGO web application focused on helping stray anima
 
 To connect compassionate people with stray animals and trusted NGOs.
 
-Made with love by Soumili & Sayani 💛
-
 ---
 
-Made with love by Soumili 💛
+Made with love by Soumili & Sayani 💛
+
+
